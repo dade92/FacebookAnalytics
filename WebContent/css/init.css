@@ -1,0 +1,35 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	font-size: 110%;
+	margin: 2px;
+	font-family: "Arial";
+	color: blue;
+}
+
+div.utente {
+	text-align: left;
+	position: relative;
+	bottom: -40px;
+	left: 100px;
+	width: 170px;
+}
+
+a.button {
+	background-color: silver;
+	color: blue;
+	position: relative;
+	bottom: -50px;
+	left: 50%;
+	width: 200px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: solid blue;
+}
+
+form.friends {
+	position: relative;
+	margin: 0px;
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>progetto</display-name>
+	<context-param>
+		<description>id della mia applicazione</description>
+		<param-name>id</param-name>
+		<param-value>1410955225834230</param-value>
+	</context-param>
+	<context-param>
+		<description>secret code della mia applicazione</description>
+		<param-name>secret-code</param-name>
+		<param-value> 337061aaaec0a7c6c9d241c4c93af5d3 </param-value>
+	</context-param>
+	<context-param>
+		<description>driver del database</description>
+		<param-name>driverDB</param-name>
+		<param-value>com.mysql.jdbc.Driver</param-value>
+	</context-param>
+	<context-param>
+		<description>url del database</description>
+		<param-name>db_url</param-name>
+		<param-value>jdbc:mysql://localhost/userinfo</param-value>
+	</context-param>
+	<context-param>
+		<description>user del database</description>
+		<param-name>user</param-name>
+		<param-value>root</param-value>
+	</context-param>
+	<context-param>
+		<description>password dell'user</description>
+		<param-name>password</param-name>
+		<param-value>1191992</param-value>
+	</context-param>
+	<servlet>
+		<servlet-name>FriendsServlet</servlet-name>
+		<servlet-class>test.FriendsServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>InitServlet</servlet-name>
+		<servlet-class>test.InitServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>MutualFriendsServlet</servlet-name>
+		<servlet-class>test.MutualFriendsServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CentralityMetricsServlet</servlet-name>
+		<servlet-class>test.CentralityMetricsServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>test.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/LogoutServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>InitServlet</servlet-name>
+		<url-pattern>/InitServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FriendsServlet</servlet-name>
+		<url-pattern>/Friends</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MutualFriendsServlet</servlet-name>
+		<url-pattern>/MutualFriends</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CentralityMetricsServlet</servlet-name>
+		<url-pattern>/CentralityMetricsServlet</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>

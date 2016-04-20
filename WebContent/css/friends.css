@@ -1,0 +1,12 @@
+@CHARSET "ISO-8859-1";
+
+div.friends {
+	position: relative;
+	left: 100px;
+	margin: 0px;
+}
+
+#button {
+	position: absolute;
+	left: 580px;
+}
